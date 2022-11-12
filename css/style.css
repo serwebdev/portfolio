@@ -35,9 +35,6 @@ body {
 
 .portfolio__list a {
     text-decoration: none;
-    color: #000080;
-    text-underline-offset: 4px;
-    text-decoration-color: #0000ff4d;
     position: relative;
 }
 
@@ -48,11 +45,15 @@ body {
     bottom: 1px;
     right: 0;
     height: 1px;
-    background: #000080;
+    background: #0000FF;
     transform: scale(0);
     transition: .2s;
 }
 
 .portfolio__list a:hover::before {
     transform: scale(1);
+}
+
+.portfolio__list a:visited::before {
+    background: #551a8b;
 }
