@@ -28,14 +28,28 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    list-style-type: none;
+    /* list-style-type: none; */
+    padding-left: 15px;
 }
 
 .portfolio__list li {}
 
 .portfolio__list a {
+    --color: #0000FF;
+    --visited: #551a8b;
+    --active: #ff0000;
+
     text-decoration: none;
     position: relative;
+    color: var(--color);
+}
+
+.portfolio__list a:visited {
+    color: var(--visited);
+}
+
+.portfolio__list a:active {
+    color: var(--active);
 }
 
 .portfolio__list a::before {
@@ -45,7 +59,7 @@ body {
     bottom: 1px;
     right: 0;
     height: 1px;
-    background: #0000FF;
+    background: var(--color);
     transform: scale(0);
     transition: .2s;
 }
@@ -55,5 +69,9 @@ body {
 }
 
 .portfolio__list a:visited::before {
-    background: #551a8b;
+    background: var(--visited);
+}
+
+.portfolio__list a:active::before {
+    background: var(--active);
 }
