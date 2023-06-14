@@ -1,0 +1,51 @@
+const cards = [
+  {
+    id: 1,
+    link: 'https://serwebdev.github.io/awareness/dist/',
+    img: 'awareness.jpg',
+    pages: 1,
+    title: 'Фонд "Осознание"',
+  },
+  {
+    id: 2,
+    link: 'https://serwebdev.github.io/garage/dist/',
+    img: 'garage.jpg',
+    pages: 6,
+    title: 'Ремонт и ТО автомобилей',
+  },
+  {
+    id: 3,
+    link: 'https://serwebdev.github.io/bio-dynamic/dist/',
+    img: 'bio-dynamic.jpg',
+    pages: 1,
+    title: 'Биодинамика - лечение движением',
+  },
+  {
+    id: 4,
+    link: 'https://serwebdev.github.io/flors/dist/',
+    img: 'flors.jpg',
+    pages: 1,
+    title: 'Заказ цветов',
+  },
+  {
+    id: 5,
+    link: 'https://serwebdev.github.io/element-home/dist/',
+    img: 'element-home.jpg',
+    pages: 5,
+    title: 'Сайт производителя мебели',
+  },
+  {
+    id: 6,
+    link: 'https://serwebdev.github.io/iron/dist/',
+    img: 'iron.jpg',
+    pages: 5,
+    title: 'Завод металлоконструкций "Iron"',
+  },
+  {
+    id: 7,
+    link: 'https://serwebdev.github.io/pero-travel/dist/',
+    img: 'pero-travel.jpg',
+    pages: 3,
+    title: 'Онлайн-сервис по бронированию экскурсий',
+  },
+];

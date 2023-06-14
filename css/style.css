@@ -1,77 +1,131 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
-    font-size: 16px;
+  font-family: "Nunito", sans-serif;
 }
 
 .container {
-    max-width: 1630px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .portfolio {
-    margin-top: 30px;
+  padding: 30px 0;
 }
-
 .portfolio__title {
-    margin-bottom: 15px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-
-.portfolio__list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* list-style-type: none; */
-    padding-left: 15px;
+.portfolio__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
-
-.portfolio__list li {}
-
-.portfolio__list a {
-    --color: #0000FF;
-    --visited: #551a8b;
-    --active: #ff0000;
-
-    text-decoration: none;
-    position: relative;
-    color: var(--color);
+@media (max-width: 1000px) {
+  .portfolio__cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
-
-.portfolio__list a:visited {
-    color: var(--visited);
+@media (max-width: 640px) {
+  .portfolio__cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
 }
-
-.portfolio__list a:active {
-    color: var(--active);
+.portfolio__card {
+  aspect-ratio: 300/200;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  position: relative;
+  overflow: hidden;
 }
-
-.portfolio__list a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    right: 0;
-    height: 1px;
-    background: var(--color);
-    transform: scale(0);
-    transition: .2s;
+.portfolio__card:hover {
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
 }
-
-.portfolio__list a:hover::before {
-    transform: scale(1);
+.portfolio__card:hover .portfolio__overlay {
+  opacity: 1;
 }
-
-.portfolio__list a:visited::before {
-    background: var(--visited);
+@media (max-width: 768px) {
+  .portfolio__card {
+    font-size: 14px;
+  }
 }
-
-.portfolio__list a:active::before {
-    background: var(--active);
+.portfolio__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 1;
+}
+.portfolio__card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 0;
+}
+.portfolio__card-top {
+  color: #fff;
+  padding: 10px 15px 15px;
+  text-align: end;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.65)));
+  background: -o-linear-gradient(bottom, transparent, rgba(0, 0, 0, 0.65) 81%);
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.65) 81%);
+}
+.portfolio__card-top span {
+  font-weight: 700;
+}
+.portfolio__card-bottom {
+  color: #fff;
+  padding: 30px 15px 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(81%, rgba(0, 0, 0, 0.65)));
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.65) 81%);
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.65) 81%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .portfolio__card-bottom {
+    padding: 20px 15px 10px;
+  }
 }
