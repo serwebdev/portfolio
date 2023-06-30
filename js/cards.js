@@ -1,5 +1,12 @@
 const cards = [
   {
+    id: 8,
+    link: 'https://serwebdev.github.io/cleaning/dist/',
+    img: 'cleaning.jpg',
+    pages: 2,
+    title: 'Сайт клининговой компании',
+  },
+  {
     id: 1,
     link: 'https://serwebdev.github.io/awareness/dist/',
     img: 'awareness.jpg',
