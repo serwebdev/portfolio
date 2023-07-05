@@ -1,58 +1,170 @@
 const cards = [
   {
-    id: 8,
-    link: 'https://serwebdev.github.io/cleaning/dist/',
-    img: 'cleaning.jpg',
-    pages: 2,
-    title: 'Сайт клининговой компании',
-  },
-  {
     id: 1,
-    link: 'https://serwebdev.github.io/awareness/dist/',
-    img: 'awareness.jpg',
-    pages: 1,
-    title: 'Фонд "Осознание"',
+    link: 'https://serwebdev.github.io/pero-travel/dist/',
+    img: 'pero-travel.jpg',
+    pageCount: 3,
+    title: 'Онлайн-сервис по бронированию экскурсий',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/pero-travel/dist/',
+      },
+      {
+        title: 'excursions.html',
+        link: 'https://serwebdev.github.io/pero-travel/dist/excursions.html',
+      },
+      {
+        title: 'tour-one.html',
+        link: 'https://serwebdev.github.io/pero-travel/dist/tour-one.html',
+      },
+    ],
   },
   {
     id: 2,
-    link: 'https://serwebdev.github.io/garage/dist/',
-    img: 'garage.jpg',
-    pages: 6,
-    title: 'Ремонт и ТО автомобилей',
+    link: 'https://serwebdev.github.io/iron/dist/',
+    img: 'iron.jpg',
+    pageCount: 5,
+    title: 'Завод металлоконструкций "Iron"',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/iron/dist/',
+      },
+      {
+        title: 'about.html',
+        link: 'https://serwebdev.github.io/iron/dist/about.html',
+      },
+      {
+        title: 'services.html',
+        link: 'https://serwebdev.github.io/iron/dist/services.html',
+      },
+      {
+        title: 'devilery.html',
+        link: 'https://serwebdev.github.io/iron/dist/devilery.html',
+      },
+      {
+        title: 'contacts.html',
+        link: 'https://serwebdev.github.io/iron/dist/contacts.html',
+      },
+    ],
   },
   {
     id: 3,
-    link: 'https://serwebdev.github.io/bio-dynamic/dist/',
-    img: 'bio-dynamic.jpg',
-    pages: 1,
-    title: 'Биодинамика - лечение движением',
+    link: 'https://serwebdev.github.io/element-home/dist/',
+    img: 'element-home.jpg',
+    pageCount: 5,
+    title: 'Сайт производителя мебели',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/element-home/dist/',
+      },
+      {
+        title: 'catalog.html',
+        link: 'https://serwebdev.github.io/element-home/dist/catolog.html',
+      },
+      {
+        title: 'product.html',
+        link: 'https://serwebdev.github.io/element-home/dist/product.html',
+      },
+      {
+        title: 'reviews.html',
+        link: 'https://serwebdev.github.io/element-home/dist/reviews.html',
+      },
+      {
+        title: 'contacts.html',
+        link: 'https://serwebdev.github.io/element-home/dist/contacts.html',
+      },
+    ],
   },
   {
     id: 4,
     link: 'https://serwebdev.github.io/flors/dist/',
     img: 'flors.jpg',
-    pages: 1,
+    pageCount: 1,
     title: 'Заказ цветов',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/flors/dist/',
+      },
+    ],
   },
   {
     id: 5,
-    link: 'https://serwebdev.github.io/element-home/dist/',
-    img: 'element-home.jpg',
-    pages: 5,
-    title: 'Сайт производителя мебели',
+    link: 'https://serwebdev.github.io/bio-dynamic/dist/',
+    img: 'bio-dynamic.jpg',
+    pageCount: 1,
+    title: 'Биодинамика - лечение движением',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/bio-dynamic/dist/',
+      },
+    ],
   },
   {
     id: 6,
-    link: 'https://serwebdev.github.io/iron/dist/',
-    img: 'iron.jpg',
-    pages: 5,
-    title: 'Завод металлоконструкций "Iron"',
+    link: 'https://serwebdev.github.io/garage/dist/',
+    img: 'garage.jpg',
+    pageCount: 6,
+    title: 'Ремонт и ТО автомобилей',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/garage/dist/',
+      },
+      {
+        title: 'services.html',
+        link: 'https://serwebdev.github.io/garage/dist/services.html',
+      },
+      {
+        title: 'technical-service.html',
+        link: 'https://serwebdev.github.io/garage/dist/technical-service.html',
+      },
+      {
+        title: 'repair-page.html',
+        link: 'https://serwebdev.github.io/garage/dist/repair-page.html',
+      },
+      {
+        title: 'news.html',
+        link: 'https://serwebdev.github.io/garage/dist/news.html',
+      },
+      {
+        title: 'post-news.html',
+        link: 'https://serwebdev.github.io/garage/dist/post-news.html',
+      },
+    ],
   },
   {
     id: 7,
-    link: 'https://serwebdev.github.io/pero-travel/dist/',
-    img: 'pero-travel.jpg',
-    pages: 3,
-    title: 'Онлайн-сервис по бронированию экскурсий',
+    link: 'https://serwebdev.github.io/awareness/dist/',
+    img: 'awareness.jpg',
+    pageCount: 1,
+    title: 'Фонд "Осознание"',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/awareness/dist/',
+      },
+    ],
+  },
+  {
+    id: 8,
+    link: 'https://serwebdev.github.io/cleaning/dist/',
+    img: 'cleaning.jpg',
+    pageCount: 2,
+    title: 'Сайт клининговой компании',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/cleaning/dist/',
+      },
+      {
+        title: 'services.html',
+        link: 'https://serwebdev.github.io/cleaning/dist/services.html',
+      },
+    ],
   },
 ];
