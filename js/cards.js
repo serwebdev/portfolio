@@ -167,4 +167,29 @@ const cards = [
       },
     ],
   },
+  {
+    id: 9,
+    link: 'https://serwebdev.github.io/logistic-silutions/dist/',
+    img: 'logistic-silutions.jpg',
+    pageCount: 4,
+    title: 'Автомобильные грузоперевозки из Китая',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/logistic-silutions/dist/',
+      },
+      {
+        title: 'blog.html',
+        link: 'https://serwebdev.github.io/logistic-silutions/dist/blog.html',
+      },
+      {
+        title: 'post.html',
+        link: 'https://serwebdev.github.io/logistic-silutions/dist/post.html',
+      },
+      {
+        title: 'contacts.html',
+        link: 'https://serwebdev.github.io/logistic-silutions/dist/contacts.html',
+      },
+    ],
+  },
 ];
