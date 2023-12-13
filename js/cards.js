@@ -192,4 +192,17 @@ const cards = [
       },
     ],
   },
+  {
+    id: 10,
+    link: 'https://serwebdev.github.io/m-concrete/',
+    img: 'm-concrete.jpg',
+    pageCount: 1,
+    title: 'Бетон в Санкт-Петербурге и Ленинградской области',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/m-concrete/',
+      },
+    ],
+  },
 ];
