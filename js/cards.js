@@ -205,4 +205,93 @@ const cards = [
       },
     ],
   },
+  {
+    id: 11,
+    link: 'https://serwebdev.github.io/termogard/dist/',
+    img: 'termogard.jpg',
+    pageCount: 20,
+    title: 'Интернет-магазин "Termogard"',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/termogard/dist/',
+      },
+      {
+        title: 'catalog.html',
+        link: 'https://serwebdev.github.io/termogard/dist/catalog.html',
+      },
+      {
+        title: 'product.html',
+        link: 'https://serwebdev.github.io/termogard/dist/product.html',
+      },
+      {
+        title: 'articles.html',
+        link: 'https://serwebdev.github.io/termogard/dist/articles.html',
+      },
+      {
+        title: 'article.html',
+        link: 'https://serwebdev.github.io/termogard/dist/article.html',
+      },
+      {
+        title: 'agreement.html',
+        link: 'https://serwebdev.github.io/termogard/dist/agreement.html',
+      },
+      {
+        title: 'brand.html',
+        link: 'https://serwebdev.github.io/termogard/dist/brand.html',
+      },
+      {
+        title: 'contacts.html',
+        link: 'https://serwebdev.github.io/termogard/dist/contacts.html',
+      },
+      {
+        title: 'payment.html',
+        link: 'https://serwebdev.github.io/termogard/dist/payment.html',
+      },
+      {
+        title: 'policy.html',
+        link: 'https://serwebdev.github.io/termogard/dist/policy.html',
+      },
+      {
+        title: 'profile.html',
+        link: 'https://serwebdev.github.io/termogard/dist/profile.html',
+      },
+      {
+        title: 'profile-order-1.html',
+        link: 'https://serwebdev.github.io/termogard/dist/profile-order-1.html',
+      },
+      {
+        title: 'profile-order-2.html',
+        link: 'https://serwebdev.github.io/termogard/dist/profile-order-2.html',
+      },
+      {
+        title: 'profile-order-3.html',
+        link: 'https://serwebdev.github.io/termogard/dist/profile-order-3.html',
+      },
+      {
+        title: 'profile-promo.html',
+        link: 'https://serwebdev.github.io/termogard/dist/profile-promo.html',
+      },
+      {
+        title: 'reviews.html',
+        link: 'https://serwebdev.github.io/termogard/dist/reviews.html',
+      },
+      {
+        title: 'search-result.html',
+        link: 'https://serwebdev.github.io/termogard/dist/search-result.html',
+      },
+      {
+        title: 'search-result-2.html',
+        link: 'https://serwebdev.github.io/termogard/dist/search-result-2.html',
+      },
+      {
+        title: 'search-result-3.html',
+        link: 'https://serwebdev.github.io/termogard/dist/search-result-3.html',
+      },
+      {
+        title: '404.html',
+        link: 'https://serwebdev.github.io/termogard/dist/404.html',
+      },
+    ],
+  },
 ];
