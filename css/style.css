@@ -28,6 +28,17 @@ body {
   font-weight: 700;
   color: #444;
 }
+.portfolio__link-back {
+  display: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.portfolio__link-back.show {
+  display: inline-block;
+}
+.portfolio__link-back:hover {
+  text-decoration: none;
+}
 .portfolio__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -55,6 +66,7 @@ body {
   transition: 0.2s;
   position: relative;
   overflow: hidden;
+  max-width: 500px;
 }
 .portfolio__card:hover {
   -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);

@@ -1,8 +1,23 @@
 const portfolioCards = document.querySelector('.portfolio__cards');
+const portfolioLinkBack = document.querySelector('.portfolio__link-back');
 
-cards.reverse();
+const url = new URL(window.location.href);
+const paramsId = url.searchParams.get('id');
 
-cards.forEach(card => {
+let cardsFilter = [];
+if (paramsId) {
+  cardsFilter = cards.filter(item => item.id === Number(paramsId));
+  portfolioLinkBack.classList.add('show');
+} else {
+  cardsFilter = cards;
+  portfolioLinkBack.classList.remove('show');
+}
+
+console.log(cardsFilter);
+
+cardsFilter.reverse();
+
+cardsFilter.forEach(card => {
   const htmlCard = `
     <div class="portfolio__card">
       <img src="img/${card.img}" alt="Портфолио" class="portfolio__card-img">
