@@ -294,4 +294,29 @@ const cards = [
       },
     ],
   },
+  {
+    id: 12,
+    link: 'https://serwebdev.github.io/children-dentistry/dist/',
+    img: 'children-dentistry.jpg',
+    pageCount: 4,
+    title: 'Сайт "Детская стоматология", с анимацией',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/children-dentistry/dist/',
+      },
+      {
+        title: 'services.html',
+        link: 'https://serwebdev.github.io/children-dentistry/dist/services.html',
+      },
+      {
+        title: 'gallery.html',
+        link: 'https://serwebdev.github.io/children-dentistry/dist/gallery.html',
+      },
+      {
+        title: 'about.html',
+        link: 'https://serwebdev.github.io/children-dentistry/dist/about.html',
+      },
+    ],
+  },
 ];
