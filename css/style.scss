@@ -7,6 +7,7 @@
 $black: #444;
 $white: #fff;
 $blue: rgb(11, 11, 172);
+$blue-light: #3d7fff;
 $red: red;
 
 body {
@@ -22,7 +23,7 @@ body {
 }
 
 .portfolio {
-  padding: 30px 0;
+  padding: 20px 0;
 
   &__inner {
   }
@@ -35,19 +36,39 @@ body {
     color: $black;
   }
 
+  &__menu {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
   &__link-back {
     display: none;
     font-size: 16px;
-    // transition: 0.2s;
-    margin-bottom: 20px;
+    text-underline-position: under;
+    transition: 0.3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
 
     &.show {
       display: inline-block;
     }
+  }
+
+  &__link-order {
+    padding: 10px 25px;
+    background: $blue-light;
+    border-radius: 100px;
+    font-size: 16px;
+    color: $white;
+    text-decoration: none;
+    transition: 0.3s;
 
     &:hover {
-      // color: $red;
-      text-decoration: none;
+      box-shadow: 0 0 0 1px $blue-light;
     }
   }
 
