@@ -319,4 +319,17 @@ const cards = [
       },
     ],
   },
+  {
+    id: 13,
+    link: 'https://serwebdev.github.io/calltracking/dist/',
+    img: 'calltracking.jpg',
+    pageCount: 1,
+    title: 'Удобный коллтрекинг для каждого',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/calltracking/dist/',
+      },
+    ],
+  },
 ];

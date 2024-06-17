@@ -21,7 +21,7 @@ cardsFilter.forEach(card => {
   const htmlCard = `
     <div class="portfolio__card">
       <img src="img/${card.img}" alt="Портфолио" class="portfolio__card-img">
-      <a href="${card.link}" class="portfolio__overlay">
+      <a href="${card.link}" class="portfolio__overlay" target="_blank">
           <div class="portfolio__card-top">
               <div class="portfolio__card-pages">Страниц: <span>${
                 card.pageCount
@@ -36,7 +36,7 @@ cardsFilter.forEach(card => {
             ?.map(page => {
               return `
                     <li class="menu__item">
-                      <a href="${page.link}" class="menu__link">${page.title}</a>
+                      <a href="${page.link}" class="menu__link" target="_blank">${page.title}</a>
                     </li>
                     `;
             })
