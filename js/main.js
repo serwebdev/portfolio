@@ -13,7 +13,7 @@ if (paramsId) {
   portfolioLinkBack.classList.remove('show');
 }
 
-console.log(cardsFilter);
+// console.log(cardsFilter);
 
 cardsFilter.reverse();
 
