@@ -332,4 +332,17 @@ const cards = [
       },
     ],
   },
+  {
+    id: 14,
+    link: 'https://serwebdev.github.io/building-in-gomel/dist/',
+    img: 'building-in-gomel.jpg',
+    pageCount: 1,
+    title: 'Строительство и ремонт в Гомеле',
+    pages: [
+      {
+        title: 'index.html',
+        link: 'https://serwebdev.github.io/building-in-gomel/dist/',
+      },
+    ],
+  },
 ];
