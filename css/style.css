@@ -19,9 +19,10 @@ body {
 }
 
 .portfolio {
-  padding: 20px 0;
+  padding-bottom: 50px;
 }
 .portfolio__title {
+  margin-bottom: 50px;
   text-align: center;
   font-size: 38px;
   font-weight: 700;
@@ -34,13 +35,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
-  margin-bottom: 30px;
+  padding: 40px 0;
 }
 .portfolio__link-back {
   display: none;
@@ -264,7 +265,7 @@ body {
   position: relative;
 }
 .menu__link:hover {
-  color: red;
+  color: #3d7fff;
 }
 .menu__link::before {
   content: "";

@@ -20,15 +20,13 @@ cardsFilter.reverse();
 cardsFilter.forEach(card => {
   const htmlCard = `
     <div class="portfolio__card">
-      <img src="img/${card.img}" alt="Портфолио" class="portfolio__card-img">
+      <img src="img/${card.img}" alt="Портфолио - работа №${card.id}" class="portfolio__card-img">
       <a href="${card.link}" class="portfolio__overlay" target="_blank">
           <div class="portfolio__card-top">
-              <div class="portfolio__card-pages">Страниц: <span>${
-                card.pageCount
-              }</span></div>
+              <div class="portfolio__card-pages">Страниц: <span>${card.pageCount}</span></div>
               <div class="portfolio__card-burger"><span></span></div>
           </div>
-          <h4 class="portfolio__card-bottom">${card.title}</h4>
+          <p class="portfolio__card-bottom">${card.title}</p>
       </a>
       <nav class="menu">
           <ul class="menu__list">
